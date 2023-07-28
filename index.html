@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formularios - Fluido de lubricación y Fluido de Perforación</title>
+</head>
+<body>
+  <h1>Formulario - Fluido de lubricación</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>N de mezcla</th>
+        <th>Hora</th>
+        <th>Agua (litros)</th>
+        <th>Polímero (gr)</th>
+        <th>Bentonita (gr)</th>
+        <th>Viscosidad (seg/qt gal)</th>
+        <th>Densidad (g/cm3)</th>
+      </tr>
+    </thead>
+    <tbody id="table-body-lubricacion">
+      <!-- Aquí se agregarán las filas dinámicamente con JavaScript -->
+    </tbody>
+  </table>
+  <button onclick="agregarFila('lubricacion')">Agregar fila</button>
+  <button onclick="calcularResultados('lubricacion')">Calcular resultados</button>
+
+  <h1>Formulario - Fluido de Perforación</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>N de mezcla</th>
+        <th>Hora</th>
+        <th>Agua (litros)</th>
+        <th>Polímero (gr)</th>
+        <th>Bentónica (gr)</th>
+        <th>Viscosidad (seg/qt gal)</th>
+        <th>Densidad (g/cm3)</th>
+        <th>Contenido Arena</th>
+      </tr>
+    </thead>
+    <tbody id="table-body-perforacion">
+      <!-- Aquí se agregarán las filas dinámicamente con JavaScript -->
+    </tbody>
+  </table>
+  <button onclick="agregarFila('perforacion')">Agregar fila</button>
+  <button onclick="calcularResultados('perforacion')">Calcular resultados</button>
+
+  <script src="app.js"></script>
+</body>
+</html>
