@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Formularios - Fluido de lubricación y Fluido de Perforación</title>
+  <title>Formulario - Fluido de lubricación y Fluido de Perforación</title>
 </head>
 <body>
   <h1>Formulario - Fluido de lubricación</h1>
@@ -32,7 +32,7 @@
         <th>Hora</th>
         <th>Agua (litros)</th>
         <th>Polímero (gr)</th>
-        <th>Bentónica (gr)</th>
+        <th>Bentonita (gr)</th>
         <th>Viscosidad (seg/qt gal)</th>
         <th>Densidad (g/cm3)</th>
         <th>Contenido Arena</th>
@@ -44,6 +44,45 @@
   </table>
   <button onclick="agregarFila('perforacion')">Agregar fila</button>
   <button onclick="calcularResultados('perforacion')">Calcular resultados</button>
+
+  <h1>Resultados - Fluido de lubricación</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>N de mezcla</th>
+        <th>Hora</th>
+        <th>Agua (m³)</th>
+        <th>Polímero (resultadoPolimero)</th>
+        <th>Bentonita (resultadoBentonita)</th>
+        <th>Viscosidad (resultadoViscosidad)</th>
+        <th>Densidad (resultadoDensidad)</th>
+        <th>Resultado Total</th>
+      </tr>
+    </thead>
+    <tbody id="resultados-lubricacion-body">
+      <!-- Aquí se mostrarán los resultados -->
+    </tbody>
+  </table>
+
+  <h1>Resultados - Fluido de Perforación</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>N de mezcla</th>
+        <th>Hora</th>
+        <th>Agua (m³)</th>
+        <th>Polímero (resultadoPolimero)</th>
+        <th>Bentonita (resultadoBentonita)</th>
+        <th>Viscosidad (resultadoViscosidad)</th>
+        <th>Densidad (resultadoDensidad)</th>
+        <th>Contenido Arena</th>
+        <th>Resultado Total</th>
+      </tr>
+    </thead>
+    <tbody id="resultados-perforacion-body">
+      <!-- Aquí se mostrarán los resultados -->
+    </tbody>
+  </table>
 
   <script src="app.js"></script>
 </body>
